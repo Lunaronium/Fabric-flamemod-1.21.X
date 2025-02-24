@@ -2,6 +2,7 @@ package net.luna.flamemod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.luna.flamemod.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,6 +12,6 @@ public class FlameMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		ModItems.registerModItems();
 	}
 }
