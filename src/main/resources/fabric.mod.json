@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "flamemod",
+	"version": "${version}",
+	"name": "Flame Mod",
+	"description": "My first mod for Flame <3",
+	"authors": [
+		"Luna"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/flamemod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.luna.flamemod.FlameMod"
+		],
+		"fabric-datagen": [
+			"net.luna.flamemod.FlameModDataGenerator"
+		],
+		"client": [
+			"net.luna.flamemod.FlameModClient"
+		]
+	},
+	"mixins": [
+		"flamemod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
